@@ -1,0 +1,15 @@
+{
+  // Use Prettier when formatting & Follow Prettier rules to prevent issues
+  // https://github.com/prettier/eslint-plugin-prettier
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  
+  // ESLint environment & cascading settings
+  // https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments
+  "env": { "es2021": true, "node": true },
+
+  "rules": {
+    // Warn on prettier issues (default is error)
+    "prettier/prettier": "warn"
+  }
+}

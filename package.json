@@ -1,0 +1,14 @@
+{
+  "name": "learning",
+  "version": "0.1.0",
+  "description": "A home for my brainteasers and mini-projects",
+  "repository": "git@github.com:bndnio/learning.git",
+  "author": "Brendon Earl <brendonaearl@gmail.com>",
+  "license": "All Rights Reserved",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
