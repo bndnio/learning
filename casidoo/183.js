@@ -21,11 +21,11 @@ function makeSentence(str, dict) {
 
     dict
       // Find words at the beginning of this section
-      .filter((word) => strLeft.indexOf(word) === 0)
+      .filter((word) => strLeft.startsWith(word))
       // Recursively find the next word
       .map((word) => {
         const nextBase = base.concat(word);
-        const nextStrLeft = strLeft.slice(word.length, strLeft.length);
+        const nextStrLeft = strLeft.substring(word.length);
         return findSentences(nextBase, nextStrLeft);
       });
   }
