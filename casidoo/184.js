@@ -7,18 +7,9 @@
  */
 
 function shortenWord(word) {
-  const characters = [...word];
-
-  const dedupedWord = characters.filter((c, i, arr) => {
-    const lastChar = arr[i - 1];
-
-    // Always keep first character
-    if (i === 0) return true;
-    // Filter out (false) when characters are the same
-    return c !== lastChar;
-  });
-
-  return dedupedWord.join("");
+  return word
+    .split("")
+    .reduce((acc, c) => (acc.endsWith(c) ? acc : acc + c), "");
 }
 
 function testSolution() {
